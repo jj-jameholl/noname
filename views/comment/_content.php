@@ -39,7 +39,7 @@ $this->registerJs(
     'options'=>['data-pjax'=>'true'],
 ]); ?>
 <?=$form->field($model,'content')->textarea(['rows'=>2])->label("");?>
-<input type="hidden" class="input1"name="tousername">
+<input type="hidden" class="input1" name="tousername">
 <input type="hidden" class="input2" name="id">
 <input type="button" class="btn btn-success" id="submit" value="提交">
 <?php ActiveForm::end()?>

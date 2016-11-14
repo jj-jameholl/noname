@@ -35,7 +35,7 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'content', 'user_id', 'createdTime'], 'required'],
+            [['username', 'content', 'user_id', 'createdTime'], 'required','message'=>'{attribute}不能为空'],
             [['content'], 'string'],
             [['user_id', 'towho', 'parent_id', 'up', 'down', 'article_id', 'createdTime'], 'integer'],
             [['username','tousername'], 'string', 'max' => 255],
@@ -50,7 +50,7 @@ class Comment extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'username' => 'Username',
-            'content' => 'Content',
+            'content' => '评论内容',
             'user_id' => 'User ID',
             'towho' => 'Towho',
             'parent_id' => 'Parent ID',

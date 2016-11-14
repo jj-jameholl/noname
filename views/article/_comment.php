@@ -58,7 +58,7 @@ $dataprovider_son = $model->search_son($model->id);
         <div class="media-heading">
             <a href=""><?=$model->username?></a>&nbsp;&nbsp;&nbsp;评论于<?=date('Y-m-d H:i',$model->createdTime)?><a class="jubao" href=""><span class="glyphicon glyphicon-envelope"></span>举报</a>
         </div>
-            <p><?=yii\helpers\Markdown::process($model->content)?></p>
+            <p><?=yii\helpers\Markdown::process($model->content,'gfm')?></p>
         <?php if($dataprovider_son->getTotalCount()!=0){?>
             <div class="hint">共&nbsp;<em><?=$dataprovider_son->getTotalCount()?></em>&nbsp;条回复</div>
         <?=ListView::widget([

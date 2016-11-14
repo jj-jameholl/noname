@@ -25,8 +25,6 @@ use yii\Helpers\Html;
                 'layout'=>'{items}{pager}',
                 'pager'=>[
                     'maxButtonCount'=>10,
-                    'nextPageLabel'=>Yii::t('app','下一页'),
-                    'prevPageLabel' =>Yii::t('app','上一页'),
                 ]
             ]);?>
         </div>

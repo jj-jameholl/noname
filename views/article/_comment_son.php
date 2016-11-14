@@ -10,8 +10,8 @@ $this->registerJs('
     $(".reply_two").click(function(){
     $(".comment-form").removeClass("hidden");
     $(".comment-form").appendTo($(this).parent().parent().parent());
-    $(".comment-form").find("input").filter(".input1").val($(".yes").val());
 //    $(".comment-form").closest(".list-view").attr("id");
+        $(".comment-form").find("input").filter(".input1").val($(this).parent().attr("class"));
     $(".comment-form").find("input").filter(".input2").val($(this).closest(".list-view").attr("id"));
     });
 ');
@@ -34,7 +34,6 @@ $this->registerJs('
     </style>
     <script src="../font/dist/js/jquery-3.1.1.js"></script>
 </head>
-<input class="yes" type="hidden" value="<?=$model->username?>">
 <hr class="hr1">
 <div class="media">
 <div class="media-left">

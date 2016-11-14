@@ -76,7 +76,7 @@ class Article extends \yii\db\ActiveRecord
         $dataProvider = new ActiveDataProvider([
             'query'=>$query,
             'pagination'=>[
-                'pageSize'=>8
+                'pageSize'=>12
             ]
         ]);
         $this->load($params);
