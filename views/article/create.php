@@ -22,6 +22,9 @@ use app\models\User;
         .title{
             width:400px;
         }
+        .redactor-editor{
+            height:500px;
+        }
         </style>
     </head>
 
