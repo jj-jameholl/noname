@@ -11,7 +11,8 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
-//AppAsset::addCss($this,'/lovestory/font/dist/css/bootstrap.min.css');
+AppAsset::addCss($this,'/lovestory/Flat/dist/css/flat-ui.css');
+AppAsset::addCss($this,'/lovestory/font/dist/css/bootstrap.min.css');
 //AppAsset::addScript($this,'/lovestory/font/dist/js/bootstrap.js');
 ?>
 <?php $this->beginPage() ?>
@@ -24,7 +25,7 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
- <link href="/lovestory/Flat/dist/css/flat-ui.css" rel="stylesheet">
+<!-- <link href="/lovestory/Flat/dist/css/flat-ui.css" rel="stylesheet">-->
     <link rel="shortcut icon" href="/lovestory/Flat/img/favicon.ico">
     <script src="/lovestory/Flat/dist/js/vendor/html5shiv.js"></script>
     <script src="/lovestory/Flat/dist/js/vendor/respond.min.js"></script>

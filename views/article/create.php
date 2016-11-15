@@ -13,7 +13,7 @@ use app\models\User;
         <title>Love Story</title>
 <!--        <link rel="stylesheet" type="text/css" href="/basic/webuploader-0.1.5/webuploader.css">-->
         <link rel="stylesheet" href="/lovestory/font/Font-Awesome-3.2.1/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">
+<!--        <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">-->
 <!--    <script type="text/javascript" src="/basic/webuploader-0.1.5/webuploader.js"></script>-->
     <style>
         body{

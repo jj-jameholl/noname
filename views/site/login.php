@@ -9,7 +9,7 @@ $this->title = 'Love Story';
     <meta charset="UTF-8">
     <title>Love Story</title>
     <link rel="stylesheet" href="/lovestory/font/Font-Awesome-3.2.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">-->
     <style type="text/css">
 body{
     background: url(/../lovestory/font/3.jpg);
