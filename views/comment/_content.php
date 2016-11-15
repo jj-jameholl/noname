@@ -43,3 +43,4 @@ $this->registerJs(
 <input type="hidden" class="input2" name="id">
 <input type="button" class="btn btn-success" id="submit" value="提交">
 <?php ActiveForm::end()?>
+

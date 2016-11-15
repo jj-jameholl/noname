@@ -11,7 +11,8 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
-AppAsset::addScript($this,'/lovestory/font/dist/js/bootstrap.js');
+//AppAsset::addCss($this,'/lovestory/font/dist/css/bootstrap.min.css');
+//AppAsset::addScript($this,'/lovestory/font/dist/js/bootstrap.js');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -54,7 +55,7 @@ border-radius:25px;
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                         <span class="sr-only">Toggle navigation</span>
                     </button>
-                    <a class="navbar-brand" href="/">Love Story</a>
+                    <a class="navbar-brand" href="<?=Yii::$app->homeUrl?>">Love Story</a>
                 </div>
                 <div id="navbar-collapse-01">
                     <ul class="nav navbar-nav navbar-right">

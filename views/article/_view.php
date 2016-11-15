@@ -11,7 +11,7 @@ use yii\helpers\Html;
     <link rel="stylesheet" href="/lovestory/font/Font-Awesome-3.2.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">
     <!--    <script type="text/javascript" src="/basic/webuploader-0.1.5/webuploader.js"></script>-->
-    <script src="../font/dist/js/bootstrap.js"></script>
+<!--    <script src="../font/dist/js/bootstrap.js"></script>-->
     </head>
 <div class="Article">
 <div class="Title">

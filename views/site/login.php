@@ -1,9 +1,8 @@
 <?php
 use app\assets\AppAsset;
 use yii\bootstrap\Alert;
+use yii\bootstrap\Modal;
 $this->title = 'Love Story';
-AppAsset::register($this);
-AppAsset::addScript($this,'/lovestory/font/dist/js/bootstrap.js');
 ?>
 <html>
 <head>
@@ -122,7 +121,6 @@ margin-top:10px;
 	<script src="../font/dist/js/jquery-migrate-1.2.1.js"></script>
 	<script src="../font/dist/js/jquery.validate.js"></script>
 	<script src="../font/dist/js/jquery.validate.unobtrusive.js"></script>
-	<script src="../font/dist/js/bootstrap.js"></script>
 </head>
 <body>
 <!-- Button trigger modal -->
@@ -195,6 +193,29 @@ margin-top:10px;
     <!--</div>-->
 <!--</div>-->
 </body>
+<!--<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">-->
+<!--    Launch demo modal-->
+<!--</button>-->
+<!---->
+<!--<!-- Modal -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                <h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                I Love You !-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <script type="text/javascript">
 
 </script>

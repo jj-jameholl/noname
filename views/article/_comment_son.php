@@ -32,7 +32,6 @@ $this->registerJs('
             float:right;
         }
     </style>
-    <script src="../font/dist/js/jquery-3.1.1.js"></script>
 </head>
 <hr class="hr1">
 <div class="media">

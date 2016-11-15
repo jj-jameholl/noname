@@ -12,16 +12,15 @@ use yii\widgets\DetailView;
 use yii\helpers\Url;
 use app\models\Comment;
 use yii\widgets\Pjax;
+use yii\bootstrap\Modal;
 $this->title = $article->article;
 ?>
 <head>
-    <link rel="stylesheet" href="/lovestory/markdown/css/bootstrap-markdown.min.css">
+
 <link rel="stylesheet" href="/lovestory/font/Font-Awesome-3.2.1/css/font-awesome.min.css">
 <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">
 <!--    <script type="text/javascript" src="/basic/webuploader-0.1.5/webuploader.js"></script>-->
-<script src="../font/dist/js/bootstrap.js"></script>
-    <script src="/lovestory/markdown/js/bootstrap-markdown.js"></script>
-    <script src="/lovestory/markdown/locale/bootstrap-markdown.zh.js"></script>
+<!--<script src="../font/dist/js/bootstrap.js"></script>-->
     <style>
         .img{
             height:40px;
@@ -48,6 +47,7 @@ $this->title = $article->article;
         }
         </style>
 </head>
+
 <div class="container">
 <div class="row">
     <div class="col-md-9">
@@ -59,14 +59,12 @@ $this->title = $article->article;
         <div class="title">
         <h2><?=Html::encode($article->article)?></h2>
             <hr>
-            <?php Pjax::begin(['id'=>'headinfo'])?>
             <div class="info">
                 <img class="img" src="/lovestory/photo/<?=$user->photo?>"/>&nbsp;<?=$user->username?>&nbsp;&nbsp;
                 <span class="glyphicon glyphicon-time"></span><?=date('Y-m-d :H:i:s',$article->created)?>&nbsp;&nbsp;
                 <span class="glyphicon glyphicon-pencil" ></span><?='评论:'.Comment::count($article->id)?>&nbsp;&nbsp;
                 <span class="glyphicon glyphicon-heart-empty" ></span>&nbsp;<?=$article->loves?>&nbsp;
             </div>
-            <?php Pjax::end()?>
             <hr>
         </div>
             <div class="content">
@@ -156,4 +154,26 @@ $this->title = $article->article;
 </div>
 </div>
 </div>
+<!--<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">-->
+<!--    Launch demo modal-->
+<!--</button>-->
+<!---->
+<!--<!-- Modal -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                <h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                I Love You !-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 

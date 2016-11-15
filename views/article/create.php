@@ -14,11 +14,7 @@ use app\models\User;
 <!--        <link rel="stylesheet" type="text/css" href="/basic/webuploader-0.1.5/webuploader.css">-->
         <link rel="stylesheet" href="/lovestory/font/Font-Awesome-3.2.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="/lovestory/font/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/lovestory/markdown/css/bootstrap-markdown.min.css">
-        <script src="/lovestory/markdown/js/bootstrap-markdown.js"></script>
-        <script src="/lovestory/markdown/locale/bootstrap-markdown.zh.js"></script>
 <!--    <script type="text/javascript" src="/basic/webuploader-0.1.5/webuploader.js"></script>-->
-    <script src="../font/dist/js/bootstrap.js"></script>
     <style>
         body{
             background-color: antiquewhite;
@@ -55,8 +51,6 @@ use app\models\User;
 <?=$form->field($model,'status')->inline(['width'=>0])->radioList(['1'=>'立即发布','2'=>'草稿箱','3'=>'仅好友可见'],['labelOptions'=>['style'=>'width:30px;']])->label('')?>
 <?=Html::submitButton('提交',['class'=>'btn btn-success'])?>
 <?php ActiveForm::end()?>
-<script type="text/javascript">
-    $("#mark").markdown({language:'zh'});
-    </style>
+
 
 
