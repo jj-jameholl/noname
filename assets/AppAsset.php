@@ -32,5 +32,4 @@ class AppAsset extends AssetBundle
  public static function addScript($view,$jsfile){
         $view->registerJsFile($jsfile,[AppAsset::className(),'depends'=>'app\assets\AppAsset']);
     }
-
 }

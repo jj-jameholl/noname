@@ -16,6 +16,13 @@ body{
     background-size:cover;
     margin:0px auto;
 }
+.hehe{
+    height:100%;
+    width:100%;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+
+}
 .u_user {
     width: 25px;
     height: 25px;
@@ -193,28 +200,26 @@ margin-top:10px;
     <!--</div>-->
 <!--</div>-->
 </body>
-<!--<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">-->
-<!--    Launch demo modal-->
-<!--</button>-->
-<!---->
-<!--<!-- Modal -->
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
-<!--    <div class="modal-dialog" role="document">-->
-<!--        <div class="modal-content">-->
-<!--            <div class="modal-header">-->
-<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-<!--                <h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
-<!--            </div>-->
-<!--            <div class="modal-body">-->
-<!--                I Love You !-->
-<!--            </div>-->
-<!--            <div class="modal-footer">-->
-<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <img src="/lovestory/web/uploads/1/2e0e9950ff-dc78b43842997b32aa30267c7d508941.jpg" class="hehe"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
 
